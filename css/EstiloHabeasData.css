@@ -1,0 +1,226 @@
+html{
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+body{
+    background:#4A88C1;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header, main, footer{
+    clear: both;
+}
+
+/* Scroll - Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: white #4A88C1;
+}
+
+/* Scroll - Chrome, Edge e Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #4A88C1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #4A88C1;
+}
+
+/* ---------------- Carrossel ---------------- */ 
+
+.carousel a:hover h5, .carousel a:hover p{
+    text-decoration: underline;
+}
+
+#carouselApresentacao{
+    margin-left: 0.5%;
+}
+
+#carouselApresentacao, #carouselBanners {
+    width: 49%;
+    margin-right: 0.5%;
+}
+
+/* ---------------- Modais ---------------- */ 
+
+.btn{
+    padding: 0;
+    border: 0;
+    text-align: inherit;
+}
+
+.btn-primary{
+    border-color: #4A88C1;
+    background-color: #4A88C1;
+    color: inherit;
+}
+
+.btn-primary:focus{
+    border-color: #4A88C1;
+    background-color: #4A88C1;
+    box-shadow: none;
+}
+
+.modal-title{
+    color: #000066;
+}
+
+.modal-header{
+    height: 60px;
+}
+
+@media screen and (min-width: 576px) {
+    .modal-dialog{
+        max-width: 1200px;
+        height: 95%;
+    }
+}
+
+.modal {
+    color: black;
+}
+
+.modal-body p{
+    text-align: justify;
+}
+
+/* ---------------- Apresentação Video (Modal) ---------------- */ 
+
+.video{
+    position: relative;
+    padding-top: 50%;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ---------------- Calendario (Modal) ---------------- */ 
+
+#calendar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar-table{
+    min-height: 515px;
+}
+
+.event-desc{
+    text-align: justify;
+}
+
+/* ---------------- Card ---------------- */ 
+
+.card-img-overlay{
+    background-image: linear-gradient(transparent, #292929 85%);
+}
+
+#card-1{
+    margin-left: 0.5%;
+}
+
+.card a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.card h5{
+    font-size: small;
+    color: gainsboro;
+}
+
+.card a:hover p{
+    text-decoration: underline;
+}
+
+.card.w-25{
+    width: 24.4% !important;
+}
+
+.longo{
+    width: 49% !important;
+    display: inline-block;
+}
+
+@media (max-width: 700px) {
+    .card.w-25{
+        width: 45% !important;
+    }
+
+    #card-1{
+        margin-left: 5%;
+    }
+    
+    .longo{
+        margin-top: 1rem;
+        display: block;
+        width: 90% !important;
+            margin-left: auto;
+            margin-right: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .card p{
+        font-size: x-small;
+    }
+}
+
+/* ---------------- Rodape ---------------- */
+
+footer{
+    width: 100%;
+    margin: 20px 10px 0px 10px;
+}
+
+footer hr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div table tr td{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer h3{
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+    text-align: center;
+    color: inherit;	
+}
+
+footer p{
+    font-size:12px;
+    text-align:left;
+    margin-bottom:2px;
+}
+
+footer .sede{
+    font-size: 14px;
+}
