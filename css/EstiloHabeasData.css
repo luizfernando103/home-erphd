@@ -128,7 +128,7 @@ iframe{
 /* ---------------- Card ---------------- */ 
 
 .card-img-overlay{
-    background-image: linear-gradient(transparent, #292929 85%);
+    background-image: linear-gradient(transparent, #000c2b 95%);
 }
 
 #card-1{
